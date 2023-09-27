@@ -1,0 +1,149 @@
+/* Gaya umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background-color: #a81f1f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Landing Page */
+.landing {
+    text-align: center;
+    background: url(landing-bg.jpg) center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Lapangan */
+.lapangan {
+    padding: 40px;
+}
+
+.lapangan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lapangan-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.lapangan-item {
+    text-align: center;
+}
+
+.lapangan-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.lapangan-item h3 {
+    margin-top: 10px;
+}
+
+/* Pemesanan */
+.pemesanan {
+    padding: 40px;
+}
+
+.pemesanan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pemesanan form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pemesanan form input[type="text"],
+.pemesanan form select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pemesanan form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #a81f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Rental Lapangan Futsal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo perusahaan atau nama tempat rental -->
+                <h1>Futsal Juned</h1>
+            </div>
+            <ul class="menu">
+                <!-- Menu navigasi -->
+                <li><a href="#pembuka">Home</a></li>
+                <li><a href="#pesan">Lapangan</a></li>
+                <li><a href="#isi">Pemesanan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pembuka" class="landing">
+        <!-- Konten landing page -->
+        <h2>Sewa Rental Lapangan Futsal</h2>
+        <p>Deskripsi singkat tentang tempat rental lapangan futsal</p>
+        <a href="#" class="btn">Pesan Sekarang</a>
+    </section>
+
+    <section id="pesan" class="lapangan">
+        <!-- Daftar lapangan yang tersedia -->
+        <h2>Lapangan Tersedia</h2>
+        <div class="lapangan-list">
+            <!-- Daftar lapangan -->
+            <div class="lapangan-item">
+                <img src="gambar/lapangan1.png" alt="Lapangan 1">
+                <h3>Lapangan 1</h3>
+                <p>Deskripsi lapangan 1</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+            <div class="lapangan-item">
+                <img src="gambar/lapangan2.jpg" alt="Lapangan 2">
+                <h3>Lapangan 2</h3>
+                <p>Deskripsi lapangan 2</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+            <!-- Tambahkan lebih banyak lapangan jika perlu -->
+        </div>
+    </section>
+
+    <section id="isi" class="pemesanan">
+        <!-- Formulir pemesanan -->
+        <h2>Pemesanan Lapangan</h2>
+        <form action="#" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <!-- Tambahkan input lainnya seperti tanggal, waktu, dsb. -->
+
+            <label for="lapangan">Pilih Lapangan:</label>
+            <select id="lapangan" name="lapangan" required>
+                <option value="">- Pilih Lapangan -</option>
+                <option value="lapangan1">Lapangan 1</option>
+                <option value="lapangan2">Lapangan 2</option>
+            </select>
+
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </section>
+
+    <footer id="kontak">
+        <!-- Informasi kontak dan tautan penting -->
+        <div class="footer-content">
+            <p>Alamat: Jl. Kadang kadang No. 123, Kota Samarinda</p>
+            <p>Telepon: 08123456789</p>
+            <p>Email: info@rentalfutsaljumadi.com</p>
+        </div>
+        <div class="footer-bottom">
+            <p>Hak Cipta &copy; 2023 Sewa Rental Lapangan Futsal</p>
+        </div>
+    </footer>
+</body>
+</html>
