@@ -1,0 +1,300 @@
+/* Gaya umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Tampilan Pop-up */
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-dialog {
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .popup-header h3 {
+    margin: 0;
+  }
+  
+  .close-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .popup-content p {
+    margin: 0;
+  }
+  
+  /* Body Overflow Hidden */
+  body.popup-open {
+    overflow: hidden;
+  }
+
+/* styles for light mode */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    /* styles for dark mode */
+    .dark-mode .navbar {
+    background-color: #000000;
+    color: #ffffff;
+    }
+    
+    .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    }
+    
+    .theme-toggle label {
+    margin-right: 5px;
+    color: blue;
+    }
+    
+    .theme-toggle input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #dddddd;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    }
+    
+    .theme-toggle input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: 0.3s;
+    }
+    
+    .theme-toggle input[type="checkbox"]:checked:before {
+    transform: translateX(20px);
+    background-color: #000000;
+    }
+
+/* Navbar */
+nav {
+    background-color: #f3f5f9;
+    color: #2c3e50;
+  }
+  
+  nav ul li a {
+    color: #2c3e50;
+  }
+  
+  .theme-toggle label {
+    color: #2c3e50;
+  }
+  
+  /* Dark Mode */
+  nav.dark-mode {
+    background-color: black;
+    color: #f3f5f9;
+  }
+  
+  nav.dark-mode ul li a {
+    color: #f3f5f9;
+  }
+  
+  .theme-toggle label {
+    color: #fff;
+  }
+  
+  .theme-toggle input[type="checkbox"]:before {
+    background-color: #f3f5f9;
+  }
+  
+  .theme-toggle input[type="checkbox"]:checked:before {
+    background-color: #333;
+  }
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Landing Page */
+.landing {
+    text-align: center;
+    background: url(landing-bg.jpg) center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dark-mode .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a81f1f;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Lapangan */
+.lapangan {
+    padding: 40px;
+}
+
+.lapangan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lapangan-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.lapangan-item {
+    text-align: center;
+}
+
+.lapangan-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.lapangan-item h3 {
+    margin-top: 10px;
+}
+
+/* Pemesanan */
+.pemesanan {
+    padding: 40px;
+}
+
+.pemesanan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pemesanan form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pemesanan form input[type="text"],
+.pemesanan form select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pemesanan form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #a81f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom p {
+    font-size: 14px;
+}
